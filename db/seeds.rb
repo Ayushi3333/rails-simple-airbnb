@@ -5,3 +5,40 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Flat.destroy_all
+
+Flat.create!(
+  name: 'Light & Spacious Garden Flat London',
+  address: '10 Clifton Gardens London W9 1DT',
+  description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
+  price_per_night: 75,
+  number_of_guests: 3,
+  url: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+)
+
+Flat.create!(
+  name: 'St Pancras Clock Tower Guest Suite',
+  address: 'Euston Rd London N1C 4QP',
+  description: 'A mini apartment within the clock tower apartment at St Pancras Station, with its own en suite bathroom and kitchen and sitting area.',
+  price_per_night: 110,
+  number_of_guests: 2,
+  url: "https://images.unsplash.com/photo-1502005097973-6a7082348e28?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+)
+
+Flat.create!(
+  name: 'Stylish House Close to River Thames',
+  address: '5 Queensmill Road London SW6 6JP',
+  description: 'Lovely warm comfortable and stylishly furnished house. Private bedroom and bathroom with shared living areas.',
+  price_per_night: 65,
+  number_of_guests: 2,
+  url: "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+)
+
+Flat.create!(
+  name: 'Amazing house in a green conservation area',
+  address: '11 Hillmarton Road London N7 9JE',
+  description: 'A light, airy house with a big backyard perfect for chilling out.',
+  price_per_night: 20,
+  number_of_guests: 5,
+  url: "https://images.unsplash.com/photo-1495433324511-bf8e92934d90?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+)

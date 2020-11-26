@@ -1,0 +1,12 @@
+<div class="container">
+<h1>Simple Airbnb</h1>
+<h2>All our flats</h2>
+<%= link_to "Add flat", new_flat_path %>
+  <% @flats.each do |flat| %>
+  <%= image_tag(flat.url) %>
+    <h3><%= link_to flat.name, flat_path(flat) %></h3>
+    <p><%= flat.address %></p>
+    <i class="fas fa-euro-sign"></i><%= flat.price_per_night %>
+    <i class="fas fa-user-friends"></i> <%= flat.number_of_guests %>
+  <% end %>
+</div>
